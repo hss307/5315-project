@@ -1,0 +1,19 @@
+<title>{{title}}</title>
+
+<div class="formContainer">
+    <form action="/api/restaurants" method="POST">
+        <div class="pageNo">
+            <label for="page">Page:</label>
+            <input type="text" id="page" name="page">
+        </div>
+        <div class="perPageData">
+            <label for="perPage">PerPage:</label>
+            <input type="text" id="perPage" name="perPage">
+        </div>
+        <div class="boroughName">
+            <label for="borough">Borough:</label>
+            <input type="text" id="borough" name="borough">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>

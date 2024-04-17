@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurants</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h1>Restaurants</h1>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Borough</th>
+          <th>Cuisine</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each restaurants}}
+        {{restaurants}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.borough}}</td>
+          <td>{{this.cuisine}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
